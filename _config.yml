@@ -1,0 +1,14 @@
+# Site Settings
+title: Travis A. Wagner
+email: travis@travisaw.com
+description: >
+  Bookmark this page to keep an eye on my project updates!
+baseurl: ""
+twitter_username: trvswgnr
+github_username:  trvswgnr
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
