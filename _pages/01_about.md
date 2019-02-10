@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-About content goes here.
-
-* A list item
-* Another list item
+{% for page in site.pages.devops %} {% if page.title %}
+<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% endif %} {% endfor %}

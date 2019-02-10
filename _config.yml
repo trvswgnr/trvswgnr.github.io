@@ -1,14 +1,24 @@
 # Site Settings
-title: Travis A. Wagner
-email: travis@travisaw.com
-description: >
-  Bookmark this page to keep an eye on my project updates!
+title: BPM Dev Docs
+email: travis@boilingpotmedia.com
+description: Bookmark this page to keep an eye on dev updates!
 baseurl: ""
-twitter_username: trvswgnr
-github_username:  trvswgnr
+github_username: BoilingPotMedia
 # Build Settings
 sass:
   sass_dir: _sass
 include: ['_pages']
 kramdown:
   input: GFM
+
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
